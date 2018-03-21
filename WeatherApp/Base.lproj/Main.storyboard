@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="V34-Gf-S3a">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="DgZ-tR-eoK">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" id="V34-Gf-S3a" customClass="HomeViewController" customModule="WeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Dq4-Jw-eHq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gK0-HI-baM">
+                                <rect key="frame" x="16" y="52" width="343" height="27"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dAU-kc-upQ">
+                                <rect key="frame" x="16" y="111" width="343" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="yZE-Zo-1Nt">
+                                <rect key="frame" x="87" y="175" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Dar-V3-C6P"/>
+                                    <constraint firstAttribute="width" secondItem="yZE-Zo-1Nt" secondAttribute="height" multiplier="1:1" id="cG0-l1-agK"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="iUr-PP-czT">
+                                <rect key="frame" x="32" y="440" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="iUr-PP-czT" secondAttribute="height" multiplier="1:1" id="gj6-2Y-Eql"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="3WD-Cp-wGb">
+                                <rect key="frame" x="243" y="440" width="100" height="100"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="iUr-PP-czT" firstAttribute="width" secondItem="yZE-Zo-1Nt" secondAttribute="width" multiplier="0.5" id="12m-JL-wOW"/>
+                            <constraint firstItem="gK0-HI-baM" firstAttribute="top" secondItem="hb9-ju-TfU" secondAttribute="top" constant="32" id="53a-Ex-xLG"/>
+                            <constraint firstItem="3WD-Cp-wGb" firstAttribute="top" secondItem="iUr-PP-czT" secondAttribute="top" id="Hdl-c1-O0W"/>
+                            <constraint firstItem="hb9-ju-TfU" firstAttribute="trailing" secondItem="gK0-HI-baM" secondAttribute="trailing" constant="16" id="KdP-Dr-7Ac"/>
+                            <constraint firstItem="yZE-Zo-1Nt" firstAttribute="top" secondItem="dAU-kc-upQ" secondAttribute="bottom" constant="64" id="OS7-Mq-nhI"/>
+                            <constraint firstItem="iUr-PP-czT" firstAttribute="top" secondItem="yZE-Zo-1Nt" secondAttribute="bottom" constant="65" id="Poi-pC-fxX"/>
+                            <constraint firstItem="3WD-Cp-wGb" firstAttribute="height" secondItem="iUr-PP-czT" secondAttribute="height" id="ZoS-cU-0VP"/>
+                            <constraint firstItem="dAU-kc-upQ" firstAttribute="top" secondItem="gK0-HI-baM" secondAttribute="bottom" constant="32" id="bZ0-ZE-drP"/>
+                            <constraint firstAttribute="trailing" secondItem="3WD-Cp-wGb" secondAttribute="trailing" constant="32" id="brd-yj-jxL"/>
+                            <constraint firstItem="yZE-Zo-1Nt" firstAttribute="centerX" secondItem="Dq4-Jw-eHq" secondAttribute="centerX" id="ccR-w0-Fes"/>
+                            <constraint firstItem="gK0-HI-baM" firstAttribute="leading" secondItem="hb9-ju-TfU" secondAttribute="leading" constant="16" id="ciK-AI-WdF"/>
+                            <constraint firstItem="hb9-ju-TfU" firstAttribute="trailing" secondItem="dAU-kc-upQ" secondAttribute="trailing" constant="16" id="eQY-Gm-Ypn"/>
+                            <constraint firstItem="3WD-Cp-wGb" firstAttribute="width" secondItem="iUr-PP-czT" secondAttribute="width" id="fmb-r4-2zX"/>
+                            <constraint firstItem="dAU-kc-upQ" firstAttribute="leading" secondItem="hb9-ju-TfU" secondAttribute="leading" constant="16" id="g9m-zf-XTS"/>
+                            <constraint firstItem="iUr-PP-czT" firstAttribute="leading" secondItem="hb9-ju-TfU" secondAttribute="leading" constant="32" id="gJF-Pa-Crd"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hb9-ju-TfU"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgBlue" destination="3WD-Cp-wGb" id="FsZ-ol-RcE"/>
+                        <outlet property="imgGreen" destination="iUr-PP-czT" id="x7L-uI-a8C"/>
+                        <outlet property="imgRed" destination="yZE-Zo-1Nt" id="jtI-ML-5el"/>
+                        <outlet property="lblWeather" destination="dAU-kc-upQ" id="Vs7-bd-tcr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jt8-9l-Ty2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="188" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>
